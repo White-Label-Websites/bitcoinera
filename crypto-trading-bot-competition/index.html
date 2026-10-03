@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto Trading Bot Competition: How They Work and How to Prepare</title>
+<meta name="description" content="What crypto trading bot competitions measure, the rules that decide them, and how to prepare your bot with a free three-level challenge on live prices.">
+<link rel="canonical" href="https://bitcoinera.com/crypto-trading-bot-competition/">
+<meta property="og:title" content="Crypto Trading Bot Competition: How They Work and How to Prepare">
+<meta property="og:description" content="What crypto trading bot competitions measure, the rules that decide them, and how to prepare your bot with a free three-level challenge on live prices.">
+<meta property="og:url" content="https://bitcoinera.com/crypto-trading-bot-competition/">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0d1612">
+<link rel="preload" href="/assets/fonts/Archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" data-ga="G-9W341WVCHC"></script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Crypto trading bot competitions: how they work and how to prepare", "datePublished": "2026-10-03", "dateModified": "2026-10-03", "author": {"@type": "Organization", "name": "Bitcoin Era"}, "publisher": {"@type": "Organization", "name": "Bitcoin Era"}, "mainEntityOfPage": "https://bitcoinera.com/crypto-trading-bot-competition/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a crypto trading bot competition?", "acceptedAnswer": {"@type": "Answer", "text": "An event where automated trading strategies run on the same market over the same period and are ranked, usually by return, drawdown or a risk-adjusted score."}}, {"@type": "Question", "name": "How do I win a trading bot competition?", "acceptedAnswer": {"@type": "Answer", "text": "Read the scoring rules, keep drawdowns well inside the limits and test the bot forward on live prices beforehand. Bots that stay in the game usually beat bots that swing big."}}, {"@type": "Question", "name": "Is Bitcoin Era a competition?", "acceptedAnswer": {"@type": "Answer", "text": "It is a challenge against fixed rules, open all year: three levels with profit targets and drawdown limits, on live prices with virtual money."}}, {"@type": "Question", "name": "Do I need real money to enter?", "acceptedAnswer": {"@type": "Answer", "text": "Not on Bitcoin Era. Every balance is virtual and sign-up asks for no card or deposit."}}]}
+</script>
+</head>
+<body>
+<p class="notice" role="note">Independent project on a re-used domain name. Not connected to the former &ldquo;Bitcoin Era&rdquo; trading software. <a href="/bitcoin-era-review/">Read why</a></p>
+
+<div class="wrap top">
+  <a class="mark" href="/"><i aria-hidden="true"></i>Bitcoin Era</a>
+  <nav aria-label="Main"><a href="/#rules">The rules</a><a class="hide-sm" href="/bitcoin-era-review/">Bitcoin Era review</a><a href="/contact/">Contact</a></nav>
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <p class="kicker">Guide</p>
+    <h1>Crypto trading bot competitions: how they work and how to prepare</h1>
+    <p class="updated">Last updated: 3 October 2026</p>
+    <div class="prose">
+      <p>A crypto trading bot competition puts automated strategies side by side on the same market, over the same period, and ranks them. Exchanges, data platforms and communities run them, sometimes with prizes. Whatever the organiser, the useful question is the same: does your bot make money without blowing up along the way?</p>
+      <h2>What competitions usually measure</h2>
+      <ul>
+        <li><strong>Return.</strong> How much the balance grew over the period.</li>
+        <li><strong>Drawdown.</strong> How far the balance fell at its worst. Many competitions disqualify a bot past a set limit.</li>
+        <li><strong>Risk-adjusted return.</strong> Return divided by volatility or drawdown, so a reckless bot cannot win on luck alone.</li>
+        <li><strong>Consistency.</strong> A minimum number of trading days or trades, so one big bet cannot decide the ranking.</li>
+      </ul>
+      <h2>Why most bots lose a competition early</h2>
+      <p>Competitions reward the bots that are still running at the end. A strategy that doubles in three days and then breaks the loss limit on day four ranks below a dull one that made 8% with no bad day. The common causes of early exits are oversized positions, no stop on a single trade, and strategies tuned to one kind of market that meet another.</p>
+      <h2>How to prepare a bot</h2>
+      <ol>
+        <li><strong>Read the scoring rules first.</strong> A return-only ranking and a risk-adjusted one call for different bots.</li>
+        <li><strong>Hard-code the loss limits.</strong> If the competition stops you at -10%, make your bot stop itself at -8%.</li>
+        <li><strong>Run it forward on live prices.</strong> A backtest is not enough; you want to see the bot handle markets it was not tuned on.</li>
+        <li><strong>Keep the logs.</strong> When a run fails, the log of the worst day tells you what to change.</li>
+      </ol>
+      <h2>A free three-level challenge to train on</h2>
+      <p>Bitcoin Era is a challenge against fixed rules, open all year. Your bot starts with a virtual $10,000 on live crypto prices and has to clear three levels in a row:</p>
+      <table>
+        <thead><tr><th>Level</th><th>Target</th><th>Min. days</th><th>Max. days</th><th>Max. drawdown</th><th>Daily drawdown</th></tr></thead>
+        <tbody>
+          <tr><td>Level 1</td><td>+10%</td><td>5</td><td>10</td><td>-10%</td><td>-5%</td></tr>
+          <tr><td>Level 2</td><td>+5%</td><td>5</td><td>No limit</td><td>-10%</td><td>-5%</td></tr>
+          <tr><td>Level 3</td><td>+5%</td><td>None</td><td>No limit</td><td>-10%</td><td>-5%</td></tr>
+        </tbody>
+      </table>
+      <p>The same two limits apply at every level: -10% maximum drawdown and -5% daily drawdown. Breaking either ends the run, the way a strict competition would. It costs nothing, and you can start a new bot as soon as you have fixed what broke.</p>
+      <h2>Competition vs challenge</h2>
+      <table>
+        <thead><tr><th></th><th>Bot competition</th><th>Bitcoin Era challenge</th></tr></thead>
+        <tbody>
+          <tr><td>When</td><td>Fixed dates</td><td>Any time</td></tr>
+          <tr><td>You compete against</td><td>Other bots</td><td>Fixed, public rules</td></tr>
+          <tr><td>Money at stake</td><td>Varies by organiser</td><td>None, virtual $10,000</td></tr>
+          <tr><td>Best for</td><td>Ranking your bot</td><td>Getting it ready</td></tr>
+        </tbody>
+      </table>
+      <h2>Frequently asked questions</h2>
+      <h3>What is a crypto trading bot competition?</h3>
+      <p>An event where automated trading strategies run on the same market over the same period and are ranked, usually by return, drawdown or a risk-adjusted score.</p>
+      <h3>How do I win a trading bot competition?</h3>
+      <p>Read the scoring rules, keep drawdowns well inside the limits and test the bot forward on live prices beforehand. Bots that stay in the game usually beat bots that swing big.</p>
+      <h3>Is Bitcoin Era a competition?</h3>
+      <p>It is a challenge against fixed rules, open all year: three levels with profit targets and drawdown limits, on live prices with virtual money.</p>
+      <h3>Do I need real money to enter?</h3>
+      <p>Not on Bitcoin Era. Every balance is virtual and sign-up asks for no card or deposit.</p>
+      <div class="page-cta">
+        <p>Get your bot competition-ready on live prices.</p>
+        <a class="btn" href="/#start">Build my first bot <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <h2>Related guides</h2>
+      <ul><li><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a></li><li><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a></li><li><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a></li><li><a href="/crypto-trading-simulator/">Crypto trading simulator</a></li><li><a href="/claude-trading-bot/">Claude trading bot guide</a></li><li><a href="/free-crypto-trading-bot/">Free crypto trading bot</a></li></ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a><a href="/crypto-trading-simulator/">Crypto trading simulator</a><a href="/claude-trading-bot/">Claude trading bot guide</a><a href="/crypto-trading-bot-competition/">Crypto trading bot competitions</a><a href="/free-crypto-trading-bot/">Free crypto trading bot</a><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a><a href="/privacy-policy/#cookies" data-cookie-settings>Cookie settings</a></nav>
+    <span>&copy; 2026 Bitcoin Era</span>
+    <small>Educational simulator. All balances are virtual and no real money is traded. Nothing on this site is financial advice. Crypto-assets are high risk and results on virtual money do not predict real results. Sign-up is handled by our partner AFFCOIN, and we may receive a commission when you open an account.</small>
+  </div>
+</footer>
+</body>
+</html>

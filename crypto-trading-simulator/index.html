@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto Trading Simulator: Free Paper Trading on Live Prices</title>
+<meta name="description" content="A free crypto trading simulator for paper trading: live market prices, a virtual $10,000, and prop-style drawdown rules that tell you whether your strategy holds up.">
+<link rel="canonical" href="https://bitcoinera.com/crypto-trading-simulator/">
+<meta property="og:title" content="Crypto Trading Simulator: Free Paper Trading on Live Prices">
+<meta property="og:description" content="A free crypto trading simulator for paper trading: live market prices, a virtual $10,000, and prop-style drawdown rules that tell you whether your strategy holds up.">
+<meta property="og:url" content="https://bitcoinera.com/crypto-trading-simulator/">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0d1612">
+<link rel="preload" href="/assets/fonts/Archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" data-ga="G-9W341WVCHC"></script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Crypto trading simulator: paper trade on live prices with a virtual $10,000", "datePublished": "2026-10-03", "dateModified": "2026-10-03", "author": {"@type": "Organization", "name": "Bitcoin Era"}, "publisher": {"@type": "Organization", "name": "Bitcoin Era"}, "mainEntityOfPage": "https://bitcoinera.com/crypto-trading-simulator/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a free crypto trading simulator?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bitcoin Era is free and needs no card or deposit. Your bot trades on live crypto prices with a virtual $10,000."}}, {"@type": "Question", "name": "What is paper trading in crypto?", "acceptedAnswer": {"@type": "Answer", "text": "Paper trading means placing simulated trades on real market prices with virtual money, to test a strategy without risking your own funds."}}, {"@type": "Question", "name": "Are simulator results the same as real trading?", "acceptedAnswer": {"@type": "Answer", "text": "No. Real trading adds fees, slippage and emotion. A simulator shows whether a strategy has a chance; it cannot promise the same result with real money."}}, {"@type": "Question", "name": "Can I use a simulator to practise for a prop firm?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Bitcoin Era levels use a profit target, a -10% maximum drawdown and a -5% daily drawdown, the same kind of rules prop firm evaluations apply."}}]}
+</script>
+</head>
+<body>
+<p class="notice" role="note">Independent project on a re-used domain name. Not connected to the former &ldquo;Bitcoin Era&rdquo; trading software. <a href="/bitcoin-era-review/">Read why</a></p>
+
+<div class="wrap top">
+  <a class="mark" href="/"><i aria-hidden="true"></i>Bitcoin Era</a>
+  <nav aria-label="Main"><a href="/#rules">The rules</a><a class="hide-sm" href="/bitcoin-era-review/">Bitcoin Era review</a><a href="/contact/">Contact</a></nav>
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <p class="kicker">Guide</p>
+    <h1>Crypto trading simulator: paper trade on live prices with a virtual $10,000</h1>
+    <p class="updated">Last updated: 3 October 2026</p>
+    <div class="prose">
+      <p>A crypto trading simulator lets you buy and sell on real market prices with money that does not exist. You see what your strategy would have done, without paying for the lesson. Traders call it paper trading, from the days when people wrote imaginary orders on paper.</p>
+      <h2>What a good simulator gives you</h2>
+      <ul>
+        <li><strong>Live prices.</strong> Your orders fill against the market as it moves today, including the volatile hours.</li>
+        <li><strong>A realistic balance.</strong> Practising with $1,000,000 teaches bad sizing habits. A $10,000 balance is closer to what most people would actually risk.</li>
+        <li><strong>Rules that stop you.</strong> Without a loss limit, a simulator lets you average down forever. Real accounts do not.</li>
+        <li><strong>A record you can read.</strong> Every trade, the worst day, the deepest drawdown.</li>
+      </ul>
+      <h2>Paper trading vs backtesting</h2>
+      <p>A backtest replays a strategy on past data in seconds. It is fast and useful for a first filter, but it is easy to fit a strategy to the past by accident. Paper trading runs the strategy forward, on prices nobody has seen yet. It is slower, and much harder to fool. Use both: backtest to discard bad ideas, paper trade to check the survivors.</p>
+      <table>
+        <thead><tr><th></th><th>Backtest</th><th>Paper trading (simulator)</th></tr></thead>
+        <tbody>
+          <tr><td>Data</td><td>Past prices</td><td>Live prices</td></tr>
+          <tr><td>Speed</td><td>Seconds</td><td>Days or weeks</td></tr>
+          <tr><td>Risk of fitting the past</td><td>High</td><td>Low</td></tr>
+          <tr><td>Best for</td><td>Discarding ideas</td><td>Confirming a strategy</td></tr>
+        </tbody>
+      </table>
+      <h2>How the Bitcoin Era simulator works</h2>
+      <p>You build a bot from your trading rules and it starts with a virtual $10,000. It trades on live crypto prices and has to clear three levels, each with a profit target and the same two loss limits: -10% maximum drawdown and -5% daily drawdown.</p>
+      <table>
+        <thead><tr><th>Level</th><th>Target</th><th>Min. days</th><th>Max. days</th><th>Max. drawdown</th><th>Daily drawdown</th></tr></thead>
+        <tbody>
+          <tr><td>Level 1</td><td>+10%</td><td>5</td><td>10</td><td>-10%</td><td>-5%</td></tr>
+          <tr><td>Level 2</td><td>+5%</td><td>5</td><td>No limit</td><td>-10%</td><td>-5%</td></tr>
+          <tr><td>Level 3</td><td>+5%</td><td>None</td><td>No limit</td><td>-10%</td><td>-5%</td></tr>
+        </tbody>
+      </table>
+      <p>If the bot breaks a limit, the run stops and you can see where the strategy cracked. That is the point of the exercise: finding the weak spot while it costs nothing.</p>
+      <h2>Mistakes to avoid when paper trading</h2>
+      <ol>
+        <li><strong>Trading bigger than you ever would with real money.</strong> The result is meaningless if the size is.</li>
+        <li><strong>Resetting after every loss.</strong> A strategy has to survive its bad weeks, not only its good ones.</li>
+        <li><strong>Judging on one week.</strong> Crypto can trend for days. Run at least two levels before drawing conclusions.</li>
+        <li><strong>Ignoring fees and slippage.</strong> On real exchanges each trade costs a little. Strategies that trade very often feel it most.</li>
+      </ol>
+      <h2>Is it a game?</h2>
+      <p>The levels make it feel like one, and that helps you come back. The rules, though, are the ones serious traders work under. Clearing Level 3 means your bot made money on live prices without a single day worse than -5%.</p>
+      <h2>Frequently asked questions</h2>
+      <h3>Is there a free crypto trading simulator?</h3>
+      <p>Yes. Bitcoin Era is free and needs no card or deposit. Your bot trades on live crypto prices with a virtual $10,000.</p>
+      <h3>What is paper trading in crypto?</h3>
+      <p>Paper trading means placing simulated trades on real market prices with virtual money, to test a strategy without risking your own funds.</p>
+      <h3>Are simulator results the same as real trading?</h3>
+      <p>No. Real trading adds fees, slippage and emotion. A simulator shows whether a strategy has a chance; it cannot promise the same result with real money.</p>
+      <h3>Can I use a simulator to practise for a prop firm?</h3>
+      <p>Yes. The Bitcoin Era levels use a profit target, a -10% maximum drawdown and a -5% daily drawdown, the same kind of rules prop firm evaluations apply.</p>
+      <div class="page-cta">
+        <p>Try your strategy on live prices, with virtual money.</p>
+        <a class="btn" href="/#start">Build my first bot <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <h2>Related guides</h2>
+      <ul><li><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a></li><li><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a></li><li><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a></li><li><a href="/claude-trading-bot/">Claude trading bot guide</a></li><li><a href="/crypto-trading-bot-competition/">Crypto trading bot competitions</a></li><li><a href="/free-crypto-trading-bot/">Free crypto trading bot</a></li></ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a><a href="/crypto-trading-simulator/">Crypto trading simulator</a><a href="/claude-trading-bot/">Claude trading bot guide</a><a href="/crypto-trading-bot-competition/">Crypto trading bot competitions</a><a href="/free-crypto-trading-bot/">Free crypto trading bot</a><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a><a href="/privacy-policy/#cookies" data-cookie-settings>Cookie settings</a></nav>
+    <span>&copy; 2026 Bitcoin Era</span>
+    <small>Educational simulator. All balances are virtual and no real money is traded. Nothing on this site is financial advice. Crypto-assets are high risk and results on virtual money do not predict real results. Sign-up is handled by our partner AFFCOIN, and we may receive a commission when you open an account.</small>
+  </div>
+</footer>
+</body>
+</html>

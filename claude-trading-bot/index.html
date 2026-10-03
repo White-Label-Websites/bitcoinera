@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Trading Bot: Build One and Test It on Virtual Money</title>
+<meta name="description" content="How people use Claude to write a crypto trading bot, what an AI model can and cannot do for your strategy, and how to test the result on live prices with virtual money.">
+<link rel="canonical" href="https://bitcoinera.com/claude-trading-bot/">
+<meta property="og:title" content="Claude Trading Bot: Build One and Test It on Virtual Money">
+<meta property="og:description" content="How people use Claude to write a crypto trading bot, what an AI model can and cannot do for your strategy, and how to test the result on live prices with virtual money.">
+<meta property="og:url" content="https://bitcoinera.com/claude-trading-bot/">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0d1612">
+<link rel="preload" href="/assets/fonts/Archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" data-ga="G-9W341WVCHC"></script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Claude trading bot: how to build one and test it safely", "datePublished": "2026-10-03", "dateModified": "2026-10-03", "author": {"@type": "Organization", "name": "Bitcoin Era"}, "publisher": {"@type": "Organization", "name": "Bitcoin Era"}, "mainEntityOfPage": "https://bitcoinera.com/claude-trading-bot/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there an official Claude trading bot?", "acceptedAnswer": {"@type": "Answer", "text": "No. Anthropic makes Claude, a general AI assistant, and does not sell a trading bot. Products using the name are built by third parties."}}, {"@type": "Question", "name": "Can Claude predict crypto prices?", "acceptedAnswer": {"@type": "Answer", "text": "No. Claude can write code, explain indicators and list risks, but no AI model knows future prices."}}, {"@type": "Question", "name": "Is a bot written with Claude better than one written with ChatGPT?", "acceptedAnswer": {"@type": "Answer", "text": "The model matters less than the rules and the testing. Both can write working code and both make mistakes. Test the bot on live prices with virtual money before trusting it."}}, {"@type": "Question", "name": "Where can I test an AI trading bot for free?", "acceptedAnswer": {"@type": "Answer", "text": "On Bitcoin Era your bot trades live crypto prices with a virtual $10,000 under prop-style drawdown rules, with no card or deposit."}}]}
+</script>
+</head>
+<body>
+<p class="notice" role="note">Independent project on a re-used domain name. Not connected to the former &ldquo;Bitcoin Era&rdquo; trading software. <a href="/bitcoin-era-review/">Read why</a></p>
+
+<div class="wrap top">
+  <a class="mark" href="/"><i aria-hidden="true"></i>Bitcoin Era</a>
+  <nav aria-label="Main"><a href="/#rules">The rules</a><a class="hide-sm" href="/bitcoin-era-review/">Bitcoin Era review</a><a href="/contact/">Contact</a></nav>
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <p class="kicker">Guide</p>
+    <h1>Claude trading bot: how to build one and test it safely</h1>
+    <p class="updated">Last updated: 3 October 2026</p>
+    <div class="prose">
+      <p>Claude is a general AI assistant made by Anthropic. It does not trade by itself, and Anthropic does not sell a trading bot. What people call a &ldquo;Claude trading bot&rdquo; is a bot whose code or rules were written with Claude&rsquo;s help, or a script that asks Claude for an opinion before placing an order. This guide covers both, and how to test the result before any money is involved.</p>
+      <div class="callout"><p><strong>Independent guide.</strong> Bitcoin Era is not affiliated with Anthropic. Claude is a trademark of Anthropic.</p></div>
+      <h2>Three ways people use Claude for trading</h2>
+      <h3>1. Writing the strategy code</h3>
+      <p>You describe your rules in plain English (&ldquo;buy when the 20-period average crosses above the 50, sell on the opposite cross, never risk more than 1% per trade&rdquo;) and ask Claude to turn them into Python or Pine Script. This is where AI saves the most time. It still makes mistakes, so read the code and test it.</p>
+      <h3>2. Reviewing an existing strategy</h3>
+      <p>Paste your rules and ask what could break them: a gap overnight, a sudden spike, a quiet sideways week. A model is good at listing scenarios you did not think about. It cannot tell you which one will happen.</p>
+      <h3>3. Asking the model at trade time</h3>
+      <p>Some builders call the Claude API from their bot and let it read news or chart data before each trade. This is the riskiest use. Answers vary from one call to the next, they cost money per request, and a confident answer is not a correct one.</p>
+      <h2>What an AI model cannot do</h2>
+      <ul>
+        <li><strong>Predict prices.</strong> No model knows tomorrow&rsquo;s price. Anyone selling an AI that does is selling something else.</li>
+        <li><strong>Prove a strategy works.</strong> Only results on prices the strategy has never seen can do that.</li>
+        <li><strong>Manage your risk for you.</strong> Position size and loss limits are your decision. Write them into the bot.</li>
+      </ul>
+      <h2>A simple workflow</h2>
+      <ol>
+        <li>Write your strategy in plain sentences, with entry, exit, size and maximum loss.</li>
+        <li>Ask Claude to turn it into code, then ask it to list edge cases the code does not handle.</li>
+        <li>Backtest quickly on past data to discard obvious failures.</li>
+        <li>Run the surviving version forward on live prices with virtual money, under hard loss limits.</li>
+        <li>Only consider real money after the bot has survived several weeks without breaking a limit.</li>
+      </ol>
+      <h2>Test it on Bitcoin Era</h2>
+      <p>Step 4 is what Bitcoin Era is for. Your bot starts with a virtual $10,000 on live crypto prices and has to clear three levels with a -10% maximum drawdown and a -5% daily drawdown. Whether the rules came from you, from Claude or from ChatGPT, the market judges them the same way.</p>
+      <h2>Prompts that help</h2>
+      <ul>
+        <li>&ldquo;Turn these rules into Python. Add a hard stop that closes every position if the account is down 5% today.&rdquo;</li>
+        <li>&ldquo;List ten market situations where this strategy loses money.&rdquo;</li>
+        <li>&ldquo;Explain this code line by line so I can check it does what I described.&rdquo;</li>
+      </ul>
+      <h2>Frequently asked questions</h2>
+      <h3>Is there an official Claude trading bot?</h3>
+      <p>No. Anthropic makes Claude, a general AI assistant, and does not sell a trading bot. Products using the name are built by third parties.</p>
+      <h3>Can Claude predict crypto prices?</h3>
+      <p>No. Claude can write code, explain indicators and list risks, but no AI model knows future prices.</p>
+      <h3>Is a bot written with Claude better than one written with ChatGPT?</h3>
+      <p>The model matters less than the rules and the testing. Both can write working code and both make mistakes. Test the bot on live prices with virtual money before trusting it.</p>
+      <h3>Where can I test an AI trading bot for free?</h3>
+      <p>On Bitcoin Era your bot trades live crypto prices with a virtual $10,000 under prop-style drawdown rules, with no card or deposit.</p>
+      <div class="page-cta">
+        <p>Wrote a bot with AI? See if it survives live prices.</p>
+        <a class="btn" href="/#start">Build my first bot <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <h2>Related guides</h2>
+      <ul><li><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a></li><li><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a></li><li><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a></li><li><a href="/crypto-trading-simulator/">Crypto trading simulator</a></li><li><a href="/crypto-trading-bot-competition/">Crypto trading bot competitions</a></li><li><a href="/free-crypto-trading-bot/">Free crypto trading bot</a></li></ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/bitcoin-era-review/">Bitcoin Era review: the scam warning</a><a href="/crypto-prop-firm-challenge/">Crypto prop firm challenges explained</a><a href="/free-crypto-prop-firm-challenge/">Free crypto prop firm challenge</a><a href="/crypto-trading-simulator/">Crypto trading simulator</a><a href="/claude-trading-bot/">Claude trading bot guide</a><a href="/crypto-trading-bot-competition/">Crypto trading bot competitions</a><a href="/free-crypto-trading-bot/">Free crypto trading bot</a><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a><a href="/privacy-policy/#cookies" data-cookie-settings>Cookie settings</a></nav>
+    <span>&copy; 2026 Bitcoin Era</span>
+    <small>Educational simulator. All balances are virtual and no real money is traded. Nothing on this site is financial advice. Crypto-assets are high risk and results on virtual money do not predict real results. Sign-up is handled by our partner AFFCOIN, and we may receive a commission when you open an account.</small>
+  </div>
+</footer>
+</body>
+</html>
