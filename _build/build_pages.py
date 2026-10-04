@@ -19,7 +19,7 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="https://bitcoinera.com/{slug}/">
 <meta property="og:type" content="{ogtype}">
-{robots}<meta name="theme-color" content="#0d1612">
+{robots}<meta name="theme-color" content="#ffffff">
 <link rel="preload" href="/assets/fonts/Archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/site.css">
@@ -29,7 +29,7 @@ HEAD = """<!DOCTYPE html>
 <p class="notice" role="note">Independent project on a re-used domain name. Not connected to the former &ldquo;Bitcoin Era&rdquo; trading software. <a href="/bitcoin-era-review/">Read why</a></p>
 
 <div class="wrap top">
-  <a class="mark" href="/"><i aria-hidden="true"></i>Bitcoin Era</a>
+  <a class="mark" href="/"><img src="/assets/logo.png" alt="Bitcoin Era" width="192" height="34"></a>
   <nav aria-label="Main"><a href="/#rules">The rules</a><a class="hide-sm" href="/bitcoin-era-review/"{cur_review}>Bitcoin Era review</a><a href="/contact/"{cur_contact}>Contact</a></nav>
 </div>
 
@@ -146,7 +146,7 @@ PAGES.append(dict(
           <tr><td>You visit any page</td><td>IP address, browser, pages requested (technical logs)</td><td>Deliver the site and keep it secure</td><td>Legitimate interest</td></tr>
         </tbody>
       </table>
-      <p>We do not sell your data and we do not run analytics or advertising trackers on this site.</p>
+      <p>We do not sell your data and we do not run advertising trackers on this site. Analytics only uses cookies if you accept them (see section 5).</p>
       <h2>3. Who receives it</h2>
       <ul>
         <li><strong>AFFCOIN</strong> and the providers it works with, for everything you type in the sign-up form, sent directly from your browser to its servers.</li>
