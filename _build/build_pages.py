@@ -26,11 +26,11 @@ HEAD = """<!DOCTYPE html>
 <script src="/assets/consent.js" data-ga="{ga}"></script>
 {jsonld}</head>
 <body>
-<p class="notice" role="note">Independent project on a re-used domain name. Not connected to the former &ldquo;Bitcoin Era&rdquo; trading software. <a href="/bitcoin-era-review/">Read why</a></p>
+<p class="notice" role="note">Educational simulator. Virtual money only: no deposit, no real trading.</p>
 
 <div class="wrap top">
   <a class="mark" href="/"><img src="/assets/logo.png" alt="Bitcoin Era" width="192" height="34"></a>
-  <nav aria-label="Main"><a href="/#rules">The rules</a><a class="hide-sm" href="/bitcoin-era-review/"{cur_review}>Bitcoin Era review</a><a href="/contact/"{cur_contact}>Contact</a></nav>
+  <nav aria-label="Main"><a href="/#rules">The rules</a><a href="/contact/"{cur_contact}>Contact</a></nav>
 </div>
 
 <main class="page">
@@ -122,7 +122,7 @@ PAGES.append(dict(
       <h2>Accounts and affiliate disclosure</h2>
       <p>Account creation and login are handled by our partner AFFCOIN, an affiliate network. We may receive a commission when you open an account through this site. This never costs you anything, since the challenge is free. AFFCOIN can be reached at <a href="https://affcoin.com/" rel="nofollow noopener" target="_blank">affcoin.com</a> and <a href="mailto:contact@affcoin.com">contact@affcoin.com</a>. The data you enter in the sign-up form is sent directly to AFFCOIN and handled under <a href="https://affcoin.com/privacy" rel="nofollow noopener" target="_blank">its privacy policy</a>.</p>
       <h2>No connection with the former &ldquo;Bitcoin Era&rdquo; software</h2>
-      <p>The bitcoinera.com domain name was acquired by an independent publisher. This site has no connection with the &ldquo;Bitcoin Era&rdquo; automated trading software promoted in online ads, which several sources have reported as a scam. Read <a href="/bitcoin-era-review/">our review</a> for the details.</p>
+      <p>The bitcoinera.com domain name was acquired by an independent publisher. It runs a free educational trading simulator and has no connection with any automated trading software sold under the same name.</p>
       <h2>Not financial advice</h2>
       <p>Bitcoin Era is an educational simulator. Every balance is virtual, no real money is traded and nothing on this site is investment, financial or tax advice, or an invitation to buy crypto-assets. Results achieved with virtual money do not predict results with real money. Crypto-assets are high risk: you could lose all the money you invest, and you are unlikely to be protected if something goes wrong.</p>
       <h2>Intellectual property</h2>
@@ -197,55 +197,6 @@ PAGES.append(dict(
       <h2>9. Changes and contact</h2>
       <p>We may update these terms; the date at the top shows the current version. Questions: <a href="/contact/">contact us</a>.</p>"""))
 
-# ---------------------------------------------------------------- review (SEO: bitcoin era review / scam / legit)
-REVIEW_FAQ = [
-  ("Is Bitcoin Era legit?", "The original Bitcoin Era auto-trading software is not regulated by any major financial authority, and the Securities Commission Malaysia added it to its Investor Alert List in December 2020. Treat any site that asks you to deposit money into it with great caution. The bitcoinera.com site you are on now is a different project: a free educational simulator with virtual money only."),
-  ("Is bitcoinera.com the official Bitcoin Era website?", "bitcoinera.com is now owned by an independent publisher with no connection to the Bitcoin Era software advertised online. It runs a crypto bot challenge on virtual money and never asks for a deposit."),
-  ("Did Elon Musk or a TV show endorse Bitcoin Era?", "Ads for auto-trading robots like Bitcoin Era have used fake celebrity endorsements and fake news articles. A real celebrity endorsement would be announced on that person's official channels."),
-  ("How can I test a crypto trading strategy without risking money?", "Run it on live prices with a virtual balance. On Bitcoin Era you build a bot, start with a virtual $10,000 and see whether it clears three levels with clear profit targets and drawdown limits."),
-]
-PAGES.append(dict(
-  slug="bitcoin-era-review", kicker="Review", ogtype="article",
-  h1="Bitcoin Era review: scam warning, and what this site is now",
-  title="Bitcoin Era Review 2026: Scam Warning and What This Site Is Now",
-  desc="An honest Bitcoin Era review: what the auto-trading software promised, the regulator warning, the red flags, and a free way to test a crypto bot with virtual money.",
-  body="""      <div class="callout"><p><strong>Short answer.</strong> The &ldquo;Bitcoin Era&rdquo; auto-trading software advertised online is not regulated by any major authority and has been flagged by a regulator. Do not send it money. This website, bitcoinera.com, now belongs to an independent publisher and runs something else: a free crypto bot challenge with virtual money only.</p></div>
-      <h2>What Bitcoin Era claimed to be</h2>
-      <p>Bitcoin Era was promoted as an automated trading robot: deposit a few hundred dollars, switch the bot on, and let an algorithm trade crypto for you. The ads promised high daily returns, little effort and no experience needed.</p>
-      <h2>The regulator warning</h2>
-      <p>In December 2020, the Securities Commission Malaysia added Bitcoin Era to its Investor Alert List, describing it as a possible clone carrying on unlicensed capital market activities (<a href="https://brokerchooser.com/safety/bitcoin-era-broker-safe-or-scam" rel="nofollow noopener" target="_blank">source</a>). Independent broker review sites also note that it is not supervised by any top-tier regulator (<a href="https://tradersunion.com/scam-or-safe/bitcoin-era-review/" rel="nofollow noopener" target="_blank">source</a>).</p>
-      <h2>Red flags to look for in any trading robot</h2>
-      <ul>
-        <li><strong>Guaranteed or very high returns.</strong> No strategy wins every day. Anyone promising it is selling something else.</li>
-        <li><strong>Celebrity endorsements in ads.</strong> Fake news pages featuring famous names are a classic hook for these schemes.</li>
-        <li><strong>A deposit before you can test anything.</strong> A real tool lets you see it work before your money is involved.</li>
-        <li><strong>Unregulated &ldquo;partner brokers&rdquo;.</strong> Check the broker on your regulator&rsquo;s register before sending a cent.</li>
-        <li><strong>Pressure to deposit more.</strong> Calls from &ldquo;account managers&rdquo; pushing you to top up are a warning sign on their own.</li>
-      </ul>
-      <h2>What bitcoinera.com is today</h2>
-      <p>The domain name changed hands. We kept the name and built the opposite of the old pitch: instead of promising that a robot will make you money, we let you <strong>build your own bot and put it to the test</strong> on live crypto prices, with a virtual balance of $10,000.</p>
-      <ul>
-        <li>No deposit, no card, no real money at any point.</li>
-        <li>Three levels with public rules: a profit target, a maximum drawdown of -10% and a daily drawdown of -5% (<a href="/#rules">see the rulebook</a>).</li>
-        <li>When a bot breaks a limit, you see exactly where the strategy cracked.</li>
-      </ul>
-      <h2>Bitcoin Era software vs bitcoinera.com today</h2>
-      <table>
-        <thead><tr><th></th><th>Bitcoin Era software (ads)</th><th>bitcoinera.com today</th></tr></thead>
-        <tbody>
-          <tr><td>Money at stake</td><td>Real deposit required</td><td>None, virtual $10,000</td></tr>
-          <tr><td>Who trades</td><td>A black-box robot</td><td>The bot you build</td></tr>
-          <tr><td>Promise</td><td>Daily profits</td><td>A clear verdict on your strategy</td></tr>
-          <tr><td>Rules</td><td>Undisclosed</td><td>Public targets and drawdown limits</td></tr>
-        </tbody>
-      </table>
-      <h2>Frequently asked questions</h2>
-""" + "\n".join(f"      <h3>{q}</h3>\n      <p>{a}</p>" for q, a in REVIEW_FAQ) + "\n" + CTA.format(text="Want to know if your strategy really works?"),
-  jsonld=[
-    {"@context":"https://schema.org","@type":"Article","headline":"Bitcoin Era review: scam warning, and what this site is now","datePublished":"2026-10-03","dateModified":"2026-10-03","author":{"@type":"Organization","name":"Bitcoin Era"},"publisher":{"@type":"Organization","name":"Bitcoin Era"},"mainEntityOfPage":"https://bitcoinera.com/bitcoin-era-review/"},
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q, a in REVIEW_FAQ]},
-  ]))
-
 # ---------------------------------------------------------------- guide (SEO: crypto prop firm / challenge)
 GUIDE_FAQ = [
   ("What is a crypto prop firm challenge?", "It is an evaluation where you trade a firm's account under strict rules, usually a profit target plus daily and maximum loss limits. Pass it and the firm lets you trade a larger funded account and share the profits."),
@@ -313,7 +264,6 @@ def guide(slug, h1, title, desc, body, faq, cta, short):
 
 # Existing guides get a short label for the related-guides list.
 for p in PAGES:
-    if p["slug"] == "bitcoin-era-review": p["short"] = "Bitcoin Era review: the scam warning"
     if p["slug"] == "crypto-prop-firm-challenge": p["short"] = "Crypto prop firm challenges explained"
     if p["kicker"] in ("Review", "Guide"): p["body"] += "\n{related}"
 
@@ -508,7 +458,7 @@ guide("free-crypto-trading-bot",
   "Free crypto trading bot: build your own and test it without risk",
   "Free Crypto Trading Bot: Build Your Own and Test It Risk-Free",
   "Where to find a free crypto trading bot, which free offers to avoid, and how to build your own bot and test it on live prices with a virtual $10,000.",
-  """      <p>&ldquo;Free trading bot&rdquo; covers very different things: open-source software you run yourself, free tiers of paid platforms, and ads promising daily profits for free. The first two can be useful. The third is how many crypto scams start.</p>
+  """      <p>&ldquo;Free trading bot&rdquo; covers very different things: open-source software you run yourself, free tiers of paid platforms, and ads promising daily profits for free. The first two can be useful.</p>
       <h2>Free bots that are worth a look</h2>
       <ul>
         <li><strong>Open-source bots.</strong> Free code you install and configure. Powerful, but you handle the setup, the exchange keys and the security.</li>
@@ -517,7 +467,6 @@ guide("free-crypto-trading-bot",
         <li><strong>Simulators.</strong> Free places to run a bot on live prices with virtual money, like Bitcoin Era.</li>
       </ul>
       <h2>Free offers to avoid</h2>
-      <p>Walk away from any &ldquo;free&rdquo; bot that asks you to deposit money with a broker it chooses, promises fixed daily returns, or uses celebrity endorsements. Those are the marks of the auto-trading schemes regulators keep warning about. Our <a href="/bitcoin-era-review/">Bitcoin Era review</a> explains one of them in detail.</p>
       <h2>Build your own instead</h2>
       <p>A bot is a set of rules a computer follows without hesitation. You decide the rules; the bot applies them. Writing them yourself means you know exactly why each trade happens.</p>
       <ol>
@@ -541,7 +490,6 @@ guide("free-crypto-trading-bot",
       </table>""",
   [
     ("Is there a free crypto trading bot that works?", "Free open-source bots and free tiers exist and do what their rules say. Whether they make money depends on the strategy, which is why testing on virtual money first matters."),
-    ("Are free AI trading bots safe?", "Be careful with any free bot that asks for a deposit with a broker it chooses or promises fixed profits. Those are common signs of a scam."),
     ("Can I test a trading bot without money?", "Yes. On Bitcoin Era your bot runs on live crypto prices with a virtual $10,000, with no card or deposit."),
     ("Do I need to code to build a bot?", "Writing your rules clearly matters more than code. AI assistants can turn plain-English rules into code, and some platforms let you set rules without coding."),
   ],
@@ -562,7 +510,6 @@ for p in PAGES:
     html = HEAD.format(
         title=p["title"], desc=p["desc"], slug=p["slug"], ogtype=p.get("ogtype", "website"),
         robots="", jsonld=jsonld, kicker=p["kicker"], h1=p["h1"], updated="" if p["slug"]=="contact" else f'    <p class="updated">Last updated: {UPDATED}</p>\n', body=p["body"].replace("{related}", related(p["slug"])), ga=GA_ID, footer_nav=FOOTER_NAV,
-        cur_review=' aria-current="page"' if p["slug"] == "bitcoin-era-review" else "",
         cur_contact=' aria-current="page"' if p["slug"] == "contact" else "",
         scripts=p.get("scripts", ""))
     os.makedirs(os.path.join(ROOT, p["slug"]), exist_ok=True)
